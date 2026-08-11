@@ -1,8 +1,7 @@
 package com.vallejo.holaandroid
 
-// ==========================================
 // EJERCICIO 1: Validador de formulario
-// ==========================================
+
 data class ResultadoValidacion(val esValido: Boolean, val mensaje: String)
 
 fun validarUsuario(nombre: String?, email: String?): ResultadoValidacion {
@@ -24,9 +23,8 @@ fun validarUsuario(nombre: String?, email: String?): ResultadoValidacion {
     return ResultadoValidacion(true, "Usuario '$nombreLimpio' registrado correctamente")
 }
 
-// ==========================================
 // EJERCICIO 2: Registro de calificaciones
-// ==========================================
+
 fun analizarNotas(notas: List<Int>) {
     if (notas.isEmpty()) {
         println("Sin datos")
@@ -56,9 +54,7 @@ fun analizarNotas(notas: List<Int>) {
     println("Porcentaje de aprobados    : %.2f%%".format(porcentajeAprobados))
 }
 
-// ==========================================
 // FUNCIÓN MAIN PRINCIPAL
-// ==========================================
 fun main() {
     println("=== EJERCICIO 1: NULL-SAFETY ===")
     val casos = listOf(
