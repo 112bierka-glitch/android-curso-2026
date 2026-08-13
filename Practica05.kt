@@ -67,7 +67,7 @@ class Docente(
 
 
 fun imprimirReporte(personas: List<Persona>) {
-    println("\n===== REPORTE DEL SISTEMA =====")
+    println("\n REPORTE DEL SISTEMA")
     personas.forEach { persona ->
         println(persona.presentarse())
 
